@@ -4,13 +4,13 @@ import { Button } from "./button";
 const SignInOAuthButtons = () => {
   const { signIn, isLoaded } = useSignIn();
 
-  if(!isLoaded) return null
+  if (!isLoaded) return null
 
-  const signInWithGoogle=()=>{
+  const signInWithGoogle = () => {
     signIn.authenticateWithRedirect({
-      strategy:"oauth_google",
-      redirectUrl:"/sso-callback",
-      redirectUrlComplete:"/auth-callback"
+      strategy: "oauth_google",
+      redirectUrl: "/sso-callback",
+      redirectUrlComplete: "/auth-callback"
     })
   }
 

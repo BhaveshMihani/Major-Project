@@ -1,10 +1,18 @@
 import { Router } from "express";
 import { protectRoute } from './../controller/middleware/auth.middleware.js';
-import { getAllUsers } from "../controller/user.controller.js";
+import { getAllUsers, handleClerkWebhook, registerUser } from "../controller/user.controller.js";
 
 const router = Router();
 
-router.get("/", protectRoute, getAllUsers)
-//todo: GetMessages 
+// Existing route
+router.get("/", protectRoute, getAllUsers);
 
-export default router
+// New route for user registration
+router.post("/register", registerUser);
+
+// New route for Clerk webhook
+router.post("/clerk-webhook", handleClerkWebhook);
+
+// todo: GetMessages
+
+export default router;
