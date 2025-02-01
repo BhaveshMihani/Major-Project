@@ -14,7 +14,7 @@ const songs = [
 	},
 	{
 		title: "Midnight Drive",
-		artist: "The Wanderers", 
+		artist: "The Wanderers",
 		imageUrl: "/cover-images/2.jpg",
 		audioUrl: "/songs/2.mp3",
 		duration: 41, // 0:41

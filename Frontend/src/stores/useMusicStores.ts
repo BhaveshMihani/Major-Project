@@ -35,8 +35,8 @@ export const useMusicStore = create<MusiceStore>((set) => ({
   stats:{
     totalAlbums:0,
     totalSongs:0,
-    totalArtist:0,
-    totalUser: 0,
+    totalArtists:0,
+    totalUsers: 0,
     },
 
     fetchSongs: async () => {
