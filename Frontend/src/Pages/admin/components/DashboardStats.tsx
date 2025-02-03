@@ -1,6 +1,6 @@
-import { useMusicStore } from "@/stores/useMusicStores";
+import { useMusicStore } from "@/stores/useMusicStore";
 import { Library, ListMusic, PlayCircle, Users2 } from "lucide-react";
-import StatsCard from "./StatCard";
+import StatsCard from "./StatsCard";
 
 const DashboardStats = () => {
 	const { stats } = useMusicStore();
@@ -23,14 +23,14 @@ const DashboardStats = () => {
 		{
 			icon: Users2,
 			label: "Total Artists",
-			value: stats.totalArtist.toString(),
+			value: stats.totalArtists.toString(),
 			bgColor: "bg-orange-500/10",
 			iconColor: "text-orange-500",
 		},
 		{
 			icon: PlayCircle,
 			label: "Total Users",
-			value: stats.totalUser.toLocaleString(),
+			value: stats.totalUsers.toLocaleString(),
 			bgColor: "bg-sky-500/10",
 			iconColor: "text-sky-500",
 		},
