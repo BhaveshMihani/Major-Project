@@ -9,5 +9,10 @@
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"@clerk/shared": "^2.20.18",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	}
 }

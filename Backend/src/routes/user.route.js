@@ -1,10 +1,7 @@
 import { Router } from "express";
-<<<<<<< HEAD
-import { protectRoute } from '../controller/middleware/auth.middleware.js';
-=======
->>>>>>> 94f5d12c1c59c5a290bb52eeee1540205df596b2
-import { getAllUsers, handleClerkWebhook, registerUser } from "../controller/user.controller.js";
-import { protectRoute } from "../middleware/auth.middleware.js";
+import { protectRoute } from "../controller/middleware/auth.middleware.js"
+import { getAllUsers, handleClerkWebhook, registerUser, getMessages } from "../controller/user.controller.js";
+
 
 const router = Router();
 
@@ -17,6 +14,6 @@ router.post("/register", registerUser);
 // New route for Clerk webhook
 router.post("/clerk-webhook", handleClerkWebhook);
 
-// todo: GetMessages
-
+// (NEW CHANGE) Router for messages addded
+router.get("/messages/:userId", protectRoute, getMessages);
 export default router;
