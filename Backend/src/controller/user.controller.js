@@ -1,5 +1,5 @@
 import { createClerkClient } from '@clerk/backend';
-import { User } from '../models/user.model.js'; // Adjust the path as needed
+import { User } from '../models/user.model.js';
 
 import { Message } from "../models/message.model.js";
 // Initialize Clerk client

@@ -21,7 +21,10 @@ const AdminPage = () => {
 
 	if (!isAdmin && !isLoading) return <div>Unauthorized</div>;
 
+	console.log({isAdmin});
+
 	return (
+		
 		<div
 			className='min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900
    to-black text-zinc-100 p-8'

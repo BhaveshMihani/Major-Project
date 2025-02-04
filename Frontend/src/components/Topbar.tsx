@@ -70,7 +70,7 @@ const TopBar = () => {
                 <SignUp
                   appearance={{
                     elements: {
-                      formButtonPrimary: "bg-green-500 hover:bg-green-600",
+                      formButtonPrimary: "bg-blue-500 hover:bg-blue-600",
                       formFieldInput: "border border-zinc-700 rounded-md p-2",
                     },
                   }}

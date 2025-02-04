@@ -5,8 +5,13 @@ import FeaturedSection from "./components/FeaturedSection";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import SectionGrid from "./components/SectionGrid";
 import { usePlayerStore } from "@/stores/usePlayerStore";
+import { useAuthStore } from "@/stores/useAuthStore";
 
 const HomePage = () => {
+
+	const {isAdmin} = useAuthStore();
+
+	console.log({isAdmin});
 	const {
 		fetchFeaturedSongs,
 		fetchMadeForYouSongs,
