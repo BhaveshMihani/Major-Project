@@ -14,7 +14,7 @@ const TopBar = () => {
   return (
     <div className="flex items-center justify-between p-4 sticky top-0 bg-zinc-900/75 backdrop-blur-md z-10 ">
       <div className="flex gap-2 items-center">
-        <img src="./headphone1.png" alt="" className="size-12" />
+        <img src="/headphone1.png" alt="" className="size-12" />
         <p className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
           CHATTERTUNES
         </p>
