@@ -1,5 +1,5 @@
 import Topbar from "@/components/Topbar";
-import { useMusicStore } from "@/stores/useMusicStore";
+import { useMusicStore } from "@/stores/useMusicStores";
 import { useEffect } from "react";
 import FeaturedSection from "./components/FeaturedSection";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -14,7 +14,7 @@ const HomePage = () => {
 	console.log({isAdmin});
 	const {
 		fetchFeaturedSongs,
-		fetchMadeForYouSongs,
+		fetchMadeForYou,
 		fetchTrendingSongs,
 		isLoading,
 		madeForYouSongs,
@@ -26,9 +26,9 @@ const HomePage = () => {
 
 	useEffect(() => {
 		fetchFeaturedSongs();
-		fetchMadeForYouSongs();
+		fetchMadeForYou();
 		fetchTrendingSongs();
-	}, [fetchFeaturedSongs, fetchMadeForYouSongs, fetchTrendingSongs]);
+	}, [fetchFeaturedSongs, fetchMadeForYou, fetchTrendingSongs]);
 
 	useEffect(() => {
 		if (madeForYouSongs.length > 0 && featuredSongs.length > 0 && trendingSongs.length > 0) {

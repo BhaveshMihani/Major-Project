@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SongsTabContent from "./components/SongsTabContent";
 import AlbumsTabContent from "./components/AlbumsTabContent";
 import { useEffect } from "react";
-import { useMusicStore } from "@/stores/useMusicStore";
+import { useMusicStore } from "@/stores/useMusicStores";
 
 const AdminPage = () => {
 	const { isAdmin, isLoading } = useAuthStore();

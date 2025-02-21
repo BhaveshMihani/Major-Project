@@ -8,7 +8,7 @@ router.use(protectRoute, requireAdmin);
 
 router.get("/check", checkAdmin);
 
-router.post("/songs", createSong);
+router.post("/song", createSong);
 router.delete("/songs/:id", deleteSong);
 
 router.post("/albums", createAlbum);

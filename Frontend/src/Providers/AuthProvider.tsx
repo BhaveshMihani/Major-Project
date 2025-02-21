@@ -2,7 +2,7 @@ import { axiosInstance } from "@/lib/axios";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useChatStore } from "@/stores/useChatStore";
 import { useAuth } from "@clerk/clerk-react";
-import { Loader } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const updateApiToken = (token: string | null) => {
@@ -43,7 +43,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 	if (loading)
 		return (
 			<div className='h-screen w-full flex items-center justify-center'>
-				<Loader className='size-8 text-emerald-500 animate-spin' />
+				<Loader2 className='size-14 text-blue-500 animate-spin' />
 			</div>
 		);
 
