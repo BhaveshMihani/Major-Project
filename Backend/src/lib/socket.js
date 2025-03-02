@@ -4,7 +4,7 @@ import { Message } from "../models/message.model.js";
 export const initializeSocket = (server) => {
 	const io = new Server(server, {
 		cors: {
-			origin: "http://localhost:3000",
+			origin: "http://ec2-16-171-36-235.eu-north-1.compute.amazonaws.com:3000",
 			credentials: true,
 		},
 	});
