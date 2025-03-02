@@ -27,7 +27,6 @@
     "lucide-react": "^0.454.0",
     "node-vibrant": "^4.0.3",
     "react": "^19.0.0",
-    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.4.1",
     "react-resizable-panels": "^2.1.6",
